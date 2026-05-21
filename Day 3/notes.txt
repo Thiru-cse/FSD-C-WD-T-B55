@@ -1,0 +1,27 @@
+while - Entry Check
+
+Syntax:
+while(condition){
+    // Code to be executed
+}
+
+Example:
+var i = 1;
+
+while (i <= 10) {
+    // Code to be executed
+    console.log("i", i);
+    i++;
+}
+
+Do while - Exit Check
+
+Syntax:
+do{
+
+}while(condition)
+
+Example:
+do{
+    
+}

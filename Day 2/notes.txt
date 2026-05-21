@@ -1,0 +1,65 @@
+Day - 2
+
+Alert:
+
+Example:
+alert("Your message");
+
+Prompt:
+Prompt("Enter your name");
+
+Boolean: True / False
+var age = 29;
+console.log(age >= 17);
+//          29 >= 30
+
+if:
+Syntax:
+      if(condition){
+        // Code to be executed if condition is true
+      } else {
+        // Code to be executed if condition is false
+      }
+
+Example:
+var a = 2;
+
+if (a % 2 == 0) {
+  // Code to be executed if condition is true
+  console.log("Even");
+} else {
+  // Code to be executed if condition is false
+  console.log("Odd");
+}
+// Task: Voter ID - 18 -> Eligible to Vote / Not Eligible to Vote
+
+Switch Case:
+switch(variable to be checked){
+    case value1:
+    code to be executed
+    break;
+
+    case value2:
+    code to be executed
+    break;
+
+    default:
+}
+
+Example:
+var category = "";
+
+switch (category) {
+    case "light":
+    console.log("light is ON");
+    break;
+
+    case "Fan":
+    console.log("Fan is ON")
+    break;
+
+    default:
+        console.log("Everything is OFF");  
+}
+
+// Task: Home Door: Close, Bell - Open, No Bell - Closed

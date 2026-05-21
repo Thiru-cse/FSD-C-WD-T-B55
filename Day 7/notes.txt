@@ -1,0 +1,166 @@
+Div: Division
+Example:
+    <div style="background-color: aqua;">
+        <h2>Welcome to CSS</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, architecto.</p>
+    </div>
+
+Semantic Tags:
+Header,Navigation,Main,Section,Aside,Article,Footer.
+
+Example:
+    <header>
+        <h1>Website Header</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#profile">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, at?</p>
+        </article>
+    </main>
+    <aside>
+        <p>Releated links or advertisement go here</p>
+    </aside>
+    <footer>
+        <p>website footer information here.</p>
+    </footer>
+
+CSS - Cascading Style Sheet.
+Why: To add customized to the website.
+
+Inline CSS:
+Example:
+<h1 style="color: brown; font-size: 50px;">CSS Day 1</h1>
+style: attribute
+color: property
+brown: value
+
+Internal CSS:
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+    <style>
+        h1{
+            color: brown;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>CSS Day 1</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, sed?</p>
+<h1>welcome</h1>
+</body>
+</html>
+
+External CSS:
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<h1>CSS Day 1</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, sed?</p>
+<h1>welcome</h1>
+</body>
+</html>
+
+Block Elements:
+div, p, h1, ul, ol
+
+Inline Elements:
+span, a, img, b 
+
+Selectors:
+class - .className
+Id - #IdName
+Tag - h1
+
+class Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main">Welcome</div>
+    <span class="main">Hello</span>
+</body>
+</html>
+Style:
+.main {
+    color: red;
+    font-size: 30px;
+}
+
+Id Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="main">Welcome</div>
+    <span class="main">Hello</span>
+</body>
+</html>
+Style:
+#main {
+    color: red;
+    font-size: 30px;
+}
+
+Box Model:
+it is box that wrapped around an every html element.
+it is consist of
+Margin, Padding, Border
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+        <h1>Welcome</h1>
+    </div>
+</body>
+</html>
+Style:
+div {
+    color: bisque;
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    border: 3px dotted black;
+    /* margin: 50px  20px   0px   10px; */
+          /* top  right bottom left  */
+    padding: 20px;
+    margin-bottom: 10px;
+}

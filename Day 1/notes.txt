@@ -1,0 +1,42 @@
+Programming:
+           Machine Understanding language,
+           To give instructions to the computer,
+           Reduce Human effort.
+
+console.log("Hello, your name!");
+Task: Location
+
+Variables:
+var        toys          = "remote car"; // String
+ |           |                  |
+Variable   Variable name      value
+
+console.log(toys);
+
+// Task: Print the email address to the console
+
+var noOfToys = 5; // Number
+console.log(noOfToys)
+
+Operators:
+
+Arithmetic Operator: +, -, *, /, ++, --, %
+Logical Operator: &&, ||, !
+
+// Addition
+var sum = 10 + 5;
+console.log(sum);
+
+Task: Practice other Arithmetic Operator
+
+AND(&&):
+var result = ( 10 > 5 && 5 > 8 );
+console.log(result);
+
+OR(||):
+var result = ( 10 > 5 || 1 > 8 );
+console.log(result);
+
+NOT(!):
+var result = !(10 > 5);
+console.log(result);

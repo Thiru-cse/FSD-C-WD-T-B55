@@ -1,0 +1,105 @@
+Array: 
+let arr = [11, 12, 13, 14, 15];
+//index     0   1   2   3   4
+console.log(arr[3]);
+console.log(arr.length);
+
+Push() & Pop(): Add or remove from the end of the array.
+let fruits = ["Apple", "Orange"];
+fruits.push("Banana");
+console.log(fruits); // [ 'Apple', 'Orange', 'Banana' ]
+
+let fruits = ["Apple", "Orange"];
+fruits.pop();
+console.log(fruits);
+
+Shift() & Unshift(): Add or remove elements from the beginning of the array.
+let fruits = ["Apple", "Orange"];
+fruits.unshift("Cherry");
+console.log(fruits);
+
+let fruits = ["Apple", "Orange"];
+fruits.shift();
+console.log(fruits);
+
+Slice() & Splice(): Extract or Modify parts of an array.
+let arr = [1, 2, 3, 4, 5];
+const reSlice = arr.slice(1, 4);
+console.log(reSlice);
+
+let arr = [10, 20, 30, 40, 50];
+//         0   1   2   3   4
+const reSlice = arr.splice(2, 3, 33);
+console.log(arr);
+
+MRF - Map, Reduce, Filter
+
+var arr = [1,2,3,4,5];
+var sum = [2,4,6,8,10];
+
+Step 1: for loop
+Step 2: arr[i]*2
+Step 3: Declare an empty and push
+Step 4: return an result.
+
+Map():
+- it will take function as a parameter
+- it is applicable only for array.
+- it will be applied each and every element of an array.
+- it will return a new array.
+
+Syntax: arr.map(function name)
+var arr = [12, 13, 14, 15];
+var res = arr.map((ele) => ele * 2);
+console.log(res);
+
+2. Filter:
+var arr = [1,2,3,4,5];
+var res = [2,4];
+
+Step 1: for loop
+Step 2: if condition arr[i]%2==0
+Step 3; Declare an empty array and push
+Step 4: return result.
+
+- Filter takes function as a parameter
+- it is applicable only for array
+- it will return a new array
+- if a certain condition is the function is passed then it will be pushed
+- or it be ignored
+
+var arr = [1, 2, 3, 4, 5];
+var res = arr.filter((ele) => ele % 2 === 0);
+console.log(res);
+
+Reduce:
+- Reduce function take function as a parameter
+- it is applicable only for array.
+- it will return a single element
+- it will take sum of whole array.
+- it apply function on each and every element of an array.
+
+var arr = [12, 13, 14, 15];
+
+var res = arr.reduce((acc, ele) => acc + ele);
+console.log(res);
+
+Objects: { key: value}
+
+var person = {
+    name: "john",
+    age: 25,
+    gender: "male"
+}
+
+console.log(person.name);
+
+Task: Create a object for Car
+
+JSON: 
+
+var person = {
+    "name": "john",
+    "age": 25,
+    "gender": "male"
+}

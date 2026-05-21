@@ -1,0 +1,124 @@
+Day 8
+
+Icon link - https://fontawesome.com/
+CDN link - https://cdnjs.com/libraries/font-awesome
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Position Properties</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Day 8</h1>
+    <i class="fa-brands fa-facebook icon"></i>
+</body>
+</html>
+
+Font website: https://fonts.google.com/
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Position Properties</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Day 8</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia reiciendis sapiente autem at ipsum.</p>
+</body>
+</html>
+Example:
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geom:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+p{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+Position Properties:
+need: even though if you have top, left, bottom and right
+      which can be used to place/align the element on the page.
+      1. Static
+      2. Relative
+      3. Absolute
+      4. Fixed
+      5. Sticky
+
+1. Static Example:
+    <div class="main">Static</div>
+.main{
+    position: static;
+    right: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: #f0a500;
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+2. Relative Example:
+    <div class="main">Static</div>
+    .main{
+    position: relative;
+    right: 20px;
+    left: 550px;
+    top: 250px;
+    height: 150px;
+    width: 150px;
+    background-color: #f0a500;
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+3. Absolute Example:
+    <div class="parent">
+        <div class="child">Absolute</div>
+    </div>
+.parent{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #f0a500;
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #000;
+    margin: 50px;
+}
+
+.child{
+    background-color: salmon;
+    position: absolute;
+    top: 20px;
+}
+
+4. Fixed: the element is positioned relative to the browser window.
+
+5. Sticky: the element positioned on the user's scroll position
+           a sticky toggles between relative and fixed position when being scrolled.
+
+https://positiondemo.netlify.app/
+
+Task: Guvi Course section

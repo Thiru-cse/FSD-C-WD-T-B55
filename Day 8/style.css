@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geom:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.parent{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: #f0a500;
+    color: #000;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #000;
+    margin: 50px;
+}
+
+.child{
+    background-color: salmon;
+    position: absolute;
+    top: 20px;
+}

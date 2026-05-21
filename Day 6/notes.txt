@@ -1,0 +1,73 @@
+Day 6 - HTML
+
+What is HTML? Why use it!
+
+HTML - Hyper Text Markup language
+HTML vs HTML5
+Head Tags: Meta tag information about the document
+Body Tag: Contain all of your documents.
+Element: Tag + Content
+Example: <h1>Welcome</h1>
+
+Heading Tag: H1...H6 
+
+A tag:
+To redirect the document, we use "a tag/anchor tag"
+Example:
+<a href="https://www.guvi.in/" target="_blank">Google</a>
+attribute: it gives the additional information about the tag.
+href: represent the link where it has to be redirected.
+target: help us to open the documment on the new tab.
+
+image tag:
+Example:
+<img src="https://www.guvi.in/assets/DUN3iNaq-women-with-notebook-latest.webp" alt="Course Image">
+Example:
+<img src="./Images/notebook.webp">
+
+List: Ordered List, Unordered List
+Example:
+    <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ul>
+Example:
+    <ol>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ol>
+
+Table:
+Example:
+<table border="2" cellspacing="10" cellpadding="10">
+        <tr>
+            <th>Day</th>
+            <th>Period 1</th>
+            <th>Period 2</th>
+            <th>Period 3</th>
+            <th>Period 4</th>
+        </tr>
+        <td>Mon</td>
+        <td>Maths</td>
+        <td>PET</td>
+        <td>Science</td>
+        <td>English</td>
+    </table>
+
+    Form:
+    Example:
+    <form>
+        <label>Username</label><br>
+        <input type="text"><br>
+        <input type="number"><br>
+        <input type="password"><br>
+        <input type="email"><br>
+        <input type="date"><br>
+        <input type="radio"><br>
+        <input type="range"><br>
+        <input type="color"><br>
+    </form>
+    
+    <!-- Task: Firstname, Lastname, Email, Password, Upload File -->
