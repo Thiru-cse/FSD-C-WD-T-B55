@@ -1,0 +1,51 @@
+Day 9 - CSS
+
+Media Query:
+           it is called RWD
+           Responsive Web Design
+
+Syntax:
+      @media screen and (max-width: 600px){
+        // CSS Code for Mobile Device
+      }
+
+Example:
+.main {
+  background-color: rgb(255, 174, 0);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+}
+.demo {
+  background-color: rgb(166, 0, 255);
+  color: rgb(0, 0, 0);
+  font-size: 70px;
+  text-align: center;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .main {
+    background-color: rgb(0, 208, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    height: 100px;
+  }
+
+  .demo {
+  background-color: rgb(166, 0, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+}
+}
+
+
+
+Flexbox
+- Flexible box
+- One dimensional layout
