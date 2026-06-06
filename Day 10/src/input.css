@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.customClass{
+    text-align: center;
+}
