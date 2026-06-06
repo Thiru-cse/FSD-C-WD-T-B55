@@ -1,0 +1,41 @@
+Day 10 - TailwindCSS
+
+TailwindCSS link: https://tailwindcss.com/docs/installation/play-cdn
+
+Setup 1: Play CDN
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - TailwindCSS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">Welcome</h1>
+</body>
+</html>
+
+Setup 2: TailwindCSS CLI
+
+Inline CSS, Internal CSS, External CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - TailwindCSS</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<style>
+    h1{
+        color: red;
+    }
+</style>
+<body>
+<h1 class="text-3xl font-bold customClass" style="text-decoration: underline;">
+    Hello world!
+  </h1>
+</body>
+</html>
