@@ -1,0 +1,117 @@
+DOM - Document Object Model
+
+Create Element - Tag+content
+
+Step 1: Create a HTML Element
+We have to use document.createElement(elementName)
+this is an inbuilt method of document Object
+which takes element name as parameter
+var element = document.createElement("div");
+<div></div>
+
+Step 2: Add Content to the element
+by using innerText Property
+element.innerText = "Hello world";
+<div>Hello world</div>
+
+Step 3: Appending the element to the body
+document.body.append(element);
+
+Task: <p>This is paragraph</p>
+
+Attributes:
+var element = document.createElement("div");
+element.setAttribute("class", "main");
+element.innerText = "Hello world";
+document.body.append(element);
+
+innerText vs innerHTML
+More details on HTML
+1. Content
+2. Nested Element
+an alternate to innerHTML is innerText
+innerHTML: Access the HTML Content inside an element
+innerText: Access the Text Content inside an element
+
+var element = document.createElement("div");
+element.setAttribute("class", "container");
+element.innerHTML = "<p>Hello world</p>";
+document.body.append(element);
+
+Task:
+<div class="container">
+<div class="row">
+<div class="col">Hello</div>
+</div>
+</div>
+
+document.getElementByClassName
+this method is applicable if you have class attribute in the HTML Elements.
+this output will be an array of element.
+
+var element = document.getElementsByClassName("container");
+console.log(element);
+
+document.getElementById
+this method is applicable if you have id attribute in HTML Element
+this element must be in html file
+Extract here in JS
+it returns the HTML Element
+
+var element = document.getElementById("container");
+console.log(element);
+
+document.getElementByTagName
+var element = document.getElementsByTagName("div");
+console.log(element);
+
+Example: Event
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 - DOM</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <button onclick="show()">Stop Screen Share</button>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+Script:
+function show() {
+    alert("Screen Sharing Stopped")
+}
+
+HTML:
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 - DOM</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <label>Email</label>
+    <input type="text" id="input">
+    <button onclick="valid()">Submit</button>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+Script:
+function valid() {
+    var element = document.getElementById("input").value; // thiru@guvi.in
+    console.log(element);
+    if (element === "thiru@guvi.in") {
+        alert("Welcome to Home Page")
+    } else {
+        alert("Invalid User!")
+    }
+}
+
+Task: Age 18 - You are Eligible To Vote
+               You are not Eligible To Vote.
