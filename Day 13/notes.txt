@@ -1,0 +1,104 @@
+Day 13 - Browser Object Model
+
+Example:
+alert("Welcome to BOM - Browser Object Model!");
+
+Example:
+var final = confirm("Do you want to visit Google?");
+console.log(final);
+
+Example:
+var name = prompt("Enter your name:");
+alert("Hello, " + name + "! Welcome to the world of JavaScript.");
+
+SetTimeout:
+Syntax:
+setTimeout(()=>{
+}, millisecond)
+
+Example:
+setTimeout(() => {
+    console.log("Hello, World!");
+}, 5000);
+
+setInterval:
+Syntax:
+setInterval(()=>{
+},millseconds)
+
+Example:
+setInterval(() => {
+    console.log("Running setInterval every 5 seconds");
+}, 5000);
+
+clearInterval(); // This will stop the setInterval from running further
+
+ECMASCRIPT - ES6
+let, const
+arrow function
+template literals
+destructure
+spread operator
+rest operator
+promises 
+
+Template literals:
+Example:
+var firstName = "John";
+var lastName = "Doe";
+var age = 30;
+var city = "New York";
+
+// Old way of concatenating strings
+console.log("First Name: " + firstName + "last Name: " + lastName + "age: " + age + "city: " + city);
+// New way of concatenating strings using template literals - introduced in ES6
+console.log(`First Name: ${firstName} 
+    last Name: ${lastName} 
+    age: ${age} 
+    city: ${city}`);
+
+Array destructure:
+Example:
+var fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+var [one, two, three] = fruits;
+
+console.log(one);
+console.log(two);
+console.log(three);
+
+Object destructure:
+Example:
+var person = {
+    name: "John",
+    city: "new york",
+    age: 32
+}
+
+var { name, city } = person;
+
+console.log(city);
+
+Spread operator:
+var fruits = ["apple", "cherry"];
+var copyArray = [...fruits]
+
+console.log(copyArray);
+
+Example:
+var fruits = ["apple", "cherry"];
+var veg = ["tomato", "orange"]
+var copyArray = [...fruits, ...veg];
+
+console.log(copyArray);
+
+Rest parameter:
+Example:
+function add(...a) {
+    
+}
+
+add(5, 10, 11, 12, 13);
+
+
+
