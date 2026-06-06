@@ -1,0 +1,114 @@
+Day 14 - Advance Javascript
+
+Javascript: Single Threaded execute single task at the time.
+
+Synchronous: which execute all the code line by line.(Block)
+
+Asynchronous: Programming you can do task without waiting for a task to complete,
+              it execution(Non-Blocking)
+
+Example:
+console.log("Started");
+
+setTimeout(() => {
+    console.log("5secs delay")
+}, 5000);
+
+console.log("Middle")
+
+setTimeout(() => {
+    console.log("2secs delay");
+}, 2000);
+
+console.log("Completed");
+
+Callback:Callback Function is a Function that is passed as an argument to another function.
+Example:
+function person(firstName, cb) {
+    console.log("Hello" + firstName);
+    cb(); // calling the function
+}
+
+function personName() {
+    console.log("Person Name");
+}
+
+person("John", personName); // Passing the function
+
+Callback Hell:
+console.log("Start");
+
+setTimeout(() => {
+    console.log("First");
+    setTimeout(() => {
+        console.log("second");
+        setTimeout(() => {
+            console.log("third");
+        },2000)
+    }, 3000)
+},4000)
+
+Promise: it holds the result of async operation.
+Need of promise: to overcome callback hell scenerio.
+it is an object, which is holds result of the operation.
+
+Syntax:
+var variableName = new Promise((resolev, reject)); 
+
+For every promise object we have state.
+1. Pending
+2. Fulfilled(resolve)
+3. Reject
+
+Example:
+var simple = new Promise((resolve, reject) => {
+    if (5 < 0) {
+        resolve("Success")
+    } else {
+        reject("Rejected")
+    }
+})
+
+Example:
+if function return promise
+if both resolve and reject is given it depend on order.
+
+function find(num) {
+    return new Promise((resolve, reject) => {
+        resolve("This is resolve")
+        reject("This is reject")
+    })
+}
+
+find(1).then((data) => console.log(data)).catch((error)=>console.log(error));
+
+chaining of promise:
+the result of first will be served as input to second.
+
+Example:
+function chain(num) {
+    return new Promise((resolve, reject) => setTimeout(()=> resolve(num*2), 2000))
+}
+
+chain(5).then((data) => {
+    console.log(data);
+    return chain(data); //10
+}).then((data1) => {
+    console.log(data1);
+    return chain(data1) //20
+});
+
+Async/Await:
+Async Function always return a promise.
+To handle promise we have await keyword.
+await keyword can be used only inside async function.
+await helps us to wait until the promise get resolved.
+await replacement of the .then() method.
+
+async function demo() {
+    var res = await fetch("https://fakestoreapi.com/products/");
+    var result = await res.json();
+    console.log(result);   
+}
+
+demo();
